@@ -1,11 +1,11 @@
-// Main JavaScript file for Websites W Friends
+// Main JavaScript file for B and N
 
 // Constants
 const SCROLL_OFFSET = 200;
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Websites W Friends - Website loaded successfully!');
+    console.log('B and N - Website loaded successfully!');
     
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-links a');
