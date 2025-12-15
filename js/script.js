@@ -1,5 +1,8 @@
 // Main JavaScript file for Websites W Friends
 
+// Constants
+const SCROLL_OFFSET = 200;
+
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Websites W Friends - Website loaded successfully!');
@@ -30,9 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
             
-            if (pageYOffset >= sectionTop - 200) {
+            if (window.pageYOffset >= sectionTop - SCROLL_OFFSET) {
                 current = section.getAttribute('id');
             }
         });
